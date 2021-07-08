@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Image, StyleSheet, Text, ScrollView } from 'react-native';
+import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
 const User = () => {
 
@@ -11,6 +12,11 @@ const User = () => {
                 <Text style={styles.nome}>Rodrigo C Martins</Text>
                 <Text>39 anos</Text>
                 <Text>Teresópolis</Text>
+                <View style={{flexDirection: 'row'}}>
+                    <Icon name="facebook-square" size={30} color="#4064AC" style={{margin: 5}}/>
+                    <Icon name="linkedin-square" size={30} color="#0A63BC" style={{margin: 5}}/>
+                    <Icon name="github" size={30} color="#302F2F" style={{margin: 5}}/>
+                </View>
             </View>
         </View>
         <View style={styles.sobre}>
@@ -45,13 +51,14 @@ const styles = StyleSheet.create({
     },
 
     image: {
-        width: 150,
-        height: 150,
+        width: 130,
+        height: 130,
         borderRadius: 100,
     },
 
     id: {
         justifyContent: 'center',
+        marginLeft: 10,
     },
 
     sobre: {
