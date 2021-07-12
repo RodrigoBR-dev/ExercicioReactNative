@@ -7,7 +7,7 @@ const User = () => {
     return (
     <View style={styles.container}>
         <View style={styles.header}>
-            <Image style={styles.image} source={require('../src/assets/images/foto.jpg')} />
+            <Image style={styles.image} source={require('../../assets/images/foto.jpg')} />
             <View style={styles.id}>
                 <Text style={styles.nome}>Rodrigo C Martins</Text>
                 <Text>39 anos</Text>

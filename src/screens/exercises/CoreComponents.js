@@ -8,7 +8,7 @@ const CoreComponents = () => {
 
     return (
         <View style={styles.container}>
-            <Image style={{width:150, height: 150, borderRadius: 40}} source={require('../src/assets/images/react.png')} />
+            <Image style={{width:150, height: 150, borderRadius: 40}} source={require('../../assets/images/react.png')} />
             <Text style={styles.texto}>{numero}</Text>
             <View style={styles.areaBotao}>
                 <TouchableOpacity 
